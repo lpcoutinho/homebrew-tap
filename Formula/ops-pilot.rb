@@ -5,21 +5,21 @@
 class OpsPilot < Formula
   desc "AI-powered CLI for Linux/macOS system administration"
   homepage "https://github.com/lpcoutinho/ops-pilot"
-  version "0.1.0"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.1.0/ops-pilot_0.1.0_darwin_amd64.tar.gz"
-      sha256 "44c7093adf48c9294a559638f314222ff629222605736e950a36b2827653fd4c"
+      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.2.0/ops-pilot_0.2.0_darwin_amd64.tar.gz"
+      sha256 "7d9cf24b7c15d08b4cbccec3970fbcc260ed75f9f27acc5e455b6e0d9304d9df"
 
       define_method(:install) do
         bin.install "ops-pilot"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.1.0/ops-pilot_0.1.0_darwin_arm64.tar.gz"
-      sha256 "a7ad8f8e090f0467db20eeeabadff9d622f8a96c6098c2e4f946b5b3ed039c75"
+      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.2.0/ops-pilot_0.2.0_darwin_arm64.tar.gz"
+      sha256 "882fa38709fa06f075414fedb35523ef88cfa699d4a329ab9af3158d9d92ed6a"
 
       define_method(:install) do
         bin.install "ops-pilot"
@@ -29,15 +29,15 @@ class OpsPilot < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.1.0/ops-pilot_0.1.0_linux_amd64.tar.gz"
-      sha256 "9f2628a3f2b707804c6381a7d9f8793796b2536f5fdbaef743c59e529bd8dbd7"
+      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.2.0/ops-pilot_0.2.0_linux_amd64.tar.gz"
+      sha256 "c956f1f22cec24125077fc77f4258bb40d7f872dbb7572e1284bffc866598da0"
       define_method(:install) do
         bin.install "ops-pilot"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.1.0/ops-pilot_0.1.0_linux_arm64.tar.gz"
-      sha256 "e815b62a2139e443cee0184e09927203f0886552f3b37f98204da1a2f6465d89"
+      url "https://github.com/lpcoutinho/ops-pilot/releases/download/v0.2.0/ops-pilot_0.2.0_linux_arm64.tar.gz"
+      sha256 "c9db57c666b352b0bd2fa7de801e090c7da88c8e1a66caf7e85d283f04c216d6"
       define_method(:install) do
         bin.install "ops-pilot"
       end
